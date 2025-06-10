@@ -1,0 +1,62 @@
+.api-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+  padding: 32px 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+label {
+  font-weight: bold;
+  color: #1E40AF;
+  display: block;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.api-link {
+  margin-bottom: 18px;
+}
+
+.api-link span {
+  font-size: 0.98em;
+  color: #555;
+}
+
+.api-link input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f8fafc;
+  font-size: 0.98em;
+  color: #333;
+}
+
+.api-result span {
+  font-size: 0.98em;
+  color: #555;
+}
+
+.api-result pre {
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  margin-top: 6px;
+  max-height: 350px;
+  overflow: auto;
+  font-size: 0.98em;
+  color: #222;
+}

@@ -1,0 +1,38 @@
+.quisom-section {
+  max-width: 900px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+  padding: 36px 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.quisom-section h2 {
+  color: #1E40AF;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+.quisom-section h3 {
+  color: #F97316;
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.quisom-section ul {
+  margin-left: 1.2em;
+  margin-bottom: 1.2em;
+}
+.quisom-section li {
+  margin-bottom: 0.5em;
+}
+.quisom-section .equip {
+  margin-top: 2em;
+  font-weight: bold;
+  color: #1E40AF;
+}
+.quisom-section .valors-list {
+  margin-bottom: 0.5em;
+}
+.quisom-section .impactes-list {
+  margin-bottom: 0.5em;
+}
