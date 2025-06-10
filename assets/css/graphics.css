@@ -1,0 +1,69 @@
+.ods-graphic-section {
+    margin: 40px 0;
+    padding: 24px 16px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+}
+
+.ods-graphic-title {
+    color: #1E40AF;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.ods-graphic-desc {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+.ods-graphic-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.ods-graphic-info {
+    flex: 1 1 320px;
+    min-width: 300px;
+}
+
+.ods-graphic-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.ods-graphic-highlight {
+    font-weight: bold;
+    color: #F97316;
+}
+
+.ods-graphic-method h3 {
+    font-size: 1.1em;
+    color: #1E40AF;
+    margin-bottom: 0.5em;
+}
+
+.ods-graphic-method ul {
+    margin-left: 1em;
+    padding-left: 0;
+    list-style: disc inside;
+}
+
+.ods-graphic-canvas {
+    flex: 2 1 400px;
+    min-width: 320px;
+}
+
+.ods-graphic-canvas h3 {
+    font-size: 1.1em;
+    color: #1E40AF;
+    margin-bottom: 8px;
+}
+
+.ods-graphic-footnote {
+    margin-top: 32px;
+    color: #555;
+    font-size: 1em;
+}

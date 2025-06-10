@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ODS 9 - Indústria, Innovació i Infraestructures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/graphics.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">L'Impacte Social de la Indústria</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Inici</a></li>
+								<li>
+									<a href="#">Impactes</a>
+									<ul>
+										<li><a href="impacteSocial.html">Social</a></li>
+										<li><a href="#">Ambiental</a></li>
+										<li><a href="#">Econòmic</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">API</a></li>
+								<li><a href="right-sidebar.html">Qui sóc?</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+
+							<!-- Aquí comença la secció dels gràfics relacionats amb l'atur i el VAB industrial -->
+							<!-- Explicació i visualització dels gràfics relacionats: VAB industrial i atur -->
+							<section class="ods-graphic-section">
+								<header>
+									<h2 class="ods-graphic-title">1. Atur total vs. Desenvolupament Industrial</h2>
+									<h3 class="ods-graphic-title">VAB industrial i taxa d'atur per comarques</h3>
+									<p class="ods-graphic-desc">
+										<strong>Hipòtesi:</strong> A més activitat industrial, menys atur.<br>
+										<strong>Relació:</strong> Les comarques amb un VAB industrial per càpita més alt podrien tenir una taxa d’atur més baixa.
+									</p>
+								</header>
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">Vallès Occidental</span><br>
+												VAB per càpita: <strong>7,52 milers €</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Baix Llobregat</span><br>
+												Taxa d'atur: <strong>3,91%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Segarra</span><br>
+												Taxa d'atur: <strong>2,78%</strong>
+											</li>
+										</ul>
+										<div class="ods-graphic-method">
+											<h3>Metodologia</h3>
+											<ul>
+												<li>Atur registrat per sexe i comarca</li>
+												<li>Població a 1 de gener per comarca</li>
+												<li>Valor afegit brut (VAB) de la indústria</li>
+											</ul>
+										</div>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic de dispersió</h3>
+										<canvas id="scatterChart" width="600" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 1:</strong> El gràfic de dispersió mostra que, en general, les comarques amb un VAB industrial per càpita més elevat presenten una taxa d’atur més baixa. Això reforça la hipòtesi que el desenvolupament industrial pot contribuir a reduir l’atur.
+											</em>
+										</p>
+									</div>
+								</div>
+								<hr style="margin: 40px -1;">
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										
+										<p class="ods-graphic-desc">
+											Aquest gràfic compara el volum total de VAB industrial (en milions d’euros) i la taxa d’atur de les principals comarques catalanes.
+										</p>
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">Vallès Occidental</span>: VAB industrial <strong>7.218 M€</strong>, Atur <strong>4,57%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Baix Llobregat</span>: VAB industrial <strong>6.867 M€</strong>, Atur <strong>3,91%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Barcelonès</span>: VAB industrial <strong>6.500 M€</strong>, Atur <strong>4,15%</strong>
+											</li>
+										</ul>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic de barres i línia</h3>
+										<canvas id="barChart" width="700" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 2:</strong> Les comarques amb més volum industrial solen tenir taxes d’atur més baixes, tot i que hi ha excepcions. Això indica que la indústria pot ser un motor clau per a l’ocupació, però altres factors també influeixen en la taxa d’atur.
+											</em>
+										</p>
+									</div>
+								</div>
+							</section>
+
+							<section class="ods-graphic-section">
+								<header>
+									<h2 class="ods-graphic-title">2. Dependència del Sector Industrial</h2>
+									<h3 class="ods-graphic-title">Ocupació industrial i taxa d'atur per comarques</h3>
+									<p class="ods-graphic-desc">
+										<strong>Hipòtesi:</strong> Si una comarca depèn molt de la indústria i aquesta cau, l’impacte social (atur) és alt.<br>
+										<strong>Relació:</strong> El percentatge de població ocupada en la indústria comparat amb la taxa d’atur pot indicar la vulnerabilitat social d’una comarca.
+									</p>
+								</header>
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">Segarra</span><br>
+												Ocupació industrial: <strong>37,72%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Garrotxa</span><br>
+												Taxa d'atur: <strong>3,20%</strong>
+											</li>
+										</ul>
+										<div class="ods-graphic-method">
+											<h3>Metodologia</h3>
+											<ul>
+												<li>Atur registrat per sexe i comarca</li>
+												<li>Població ocupada per branques d’activitat</li>
+												<li>Població a 1 de gener per comarca</li>
+											</ul>
+										</div>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic de dependència industrial</h3>
+										<canvas id="industryDependenceChart" width="600" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 3:</strong> Les comarques amb una alta dependència industrial, com la Segarra, poden ser més vulnerables a l’atur si el sector pateix una crisi. Aquesta relació mostra la importància de diversificar l’economia per reduir riscos socials.
+											</em>
+										</p>
+									</div>
+								</div>
+								<hr style="margin: 40px -1;">
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										 
+										<p class="ods-graphic-desc">
+											Aquest gràfic mostra la distribució de l’ocupació industrial per branques d’activitat a diferents comarques, permetent identificar quins sectors són més predominants i la seva relació amb l’atur.
+										</p>
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">Segarra</span>: Ocupació industrial <strong>37,72%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Garrotxa</span>: Taxa d'atur <strong>3,20%</strong>
+											</li>
+										</ul>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic d'ocupació industrial</h3>
+										<canvas id="barChartOcupacio" width="700" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 4:</strong> L’anàlisi per branques d’activitat mostra que la concentració d’ocupació en determinats sectors pot condicionar la resiliència d’una comarca davant canvis econòmics. Una estructura industrial diversificada pot ajudar a mantenir l’ocupació i reduir l’atur.
+											</em>
+										</p>
+									</div>
+								</div>
+							</section>
+
+							<!-- Conclusions generals sobre la relació entre indústria i atur -->
+							<section class="ods-graphic-section" style="max-width: 900px; margin: 48px auto 0 auto;">
+								<header>
+									<h2 class="ods-graphic-title">Conclusions generals</h2>
+								</header>
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info" style="flex: 2 1 500px;">
+										<ul>
+											<li style="margin-bottom: 1.5em;">
+												<span class="ods-graphic-highlight">Hipòtesi 1:</span> A més activitat industrial, menys atur.<br>
+												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
+												Parcialment certa, amb una relació negativa feble entre VAB per càpita i taxa d’atur, però amb excepcions (p. ex., <span class="ods-graphic-highlight">Garrigues</span>).
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Hipòtesi 2:</span> Alta dependència industrial implica major vulnerabilitat (atur).<br>
+												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
+												No recolzada clarament, ja que comarques com <span class="ods-graphic-highlight">Segarra</span> tenen taxes d’atur baixes, però algunes com <span class="ods-graphic-highlight">Anoia</span> mostren vulnerabilitat.
+											</li>
+										</ul>
+									</div>
+									<div class="ods-graphic-canvas" style="display: flex; align-items: center; justify-content: center;">
+										<a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" title="Torna a dalt">
+											<img src="images/ODS/ODS9.jpg" alt="ODS 9" style="max-width: 180px; border-radius: 12px; box-shadow: 0 2px 8px rgba(30,64,175,0.08); cursor: pointer;">
+										</a>
+									</div>
+								</div>
+							</section>
+
+						</article>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contacta amb nosaltres</h3>
+										</header>
+										<p>Segueix-nos a les xarxes socials per a més informació i novetats sobre sostenibilitat digital.</p>
+										<ul class="icons">
+											<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://pinterest.com/" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="https://dribbble.com/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="https://linkedin.com/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Chart.js i gràfics -->
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			<script src="assets/graphics/social/1.vab_dispersio.js"></script>
+			<script src="assets/graphics/social/2.vab_barres.js"></script>
+			<script src="assets/graphics/social/3.dependenciaIndustrial.js"></script>
+			<script src="assets/graphics/social/4.ocupacioIndustrial.js"></script>
+
+	</body>
+</html>
