@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ODS 9 - Indústria, Innovació i Infraestructures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/graphics.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">L'Impacte Social de la Indústria</a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Inici</a></li>
+								<li>
+									<a href="#">Impactes</a>
+									<ul>
+										<li><a href="impacteSocial.html">Social</a></li>
+										<li><a href="impacteAmbiental.html">Ambiental</a></li>
+										<li><a href="#">Econòmic</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">API</a></li>
+								<li><a href="right-sidebar.html">Qui sóc?</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+
+							<!-- Aquí comença la secció dels gràfics relacionats amb les emissions de gasos d'efecte hivernacle i el consum energètic -->
+							<!-- Explicació i visualització dels gràfics relacionats: emissions de GEH i consum energètic -->
+							<section class="ods-graphic-section">
+								<header>
+									<h2 class="ods-graphic-title">1. Emissions de Gasos d'Efecte Hivernacle (GEH)</h2>
+									<h3 class="ods-graphic-title">Consum energètic i emissions per província</h3>
+									<p class="ods-graphic-desc">
+										<strong>Hipòtesi:</strong> El consum d’energia no renovable domina, però les renovables creixen amb el temps i varien segons la província.<br>
+										<strong>Relació:</strong> Les comarques amb més activitat industrial tenen emissions de GEH més elevades, però l’ús creixent de renovables pot mitigar aquest impacte.
+									</p>
+								</header>
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">Barcelona</span><br>
+												Consum no renovable: <strong>4.500 ktep</strong> (2020)
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Tarragona</span><br>
+												Consum renovable: <strong>400 ktep</strong> (2020)
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Catalunya</span><br>
+												Emissions GEH: <strong>12.000 kt</strong> (2020)
+											</li>
+										</ul>
+										<div class="ods-graphic-method">
+											<h3>Metodologia</h3>
+											<ul>
+												<li>Informe_Emissions_GEH_Catalunya</li>
+												<li>Catalonia_Industrial_Energy_Consumption_Report</li>
+												<li>PIB. Per sectors. Variació en volum</li>
+											</ul>
+										</div>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic de dispersió</h3>
+										<canvas id="emissionsScatterChart" width="600" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 1:</strong> El gràfic mostra que Barcelona lidera el consum d’energia no renovable i les emissions, però l’augment de renovables a Tarragona i altres províncies apunta a una tendència positiva cap a la sostenibilitat energètica.
+											</em>
+										</p>
+									</div>
+								</div>
+								<hr style="margin: 40px -1;">
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										<h3 class="ods-graphic-title" style="font-size:1.3em;">2. Evolució del consum energètic industrial</h3>
+										<p class="ods-graphic-desc">
+											Aquest gràfic mostra l’evolució del consum energètic industrial (ktep) a les principals províncies catalanes entre 2002 i 2020.
+										</p>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic d'evolució</h3>
+										<canvas id="emissionsLineChart" width="700" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 2:</strong> El consum energètic industrial ha disminuït lleugerament a Barcelona i Tarragona, mentre que Girona i Lleida mantenen nivells més baixos. Aquesta tendència pot estar relacionada amb la millora de l’eficiència energètica i la transició cap a fonts renovables.
+											</em>
+										</p>
+									</div>
+								</div>
+								<hr style="margin: 40px -1;">
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info">
+										<h3 class="ods-graphic-title" style="font-size:1.3em;">3. Consum energètic industrial i PIB industrial</h3>
+										<p class="ods-graphic-desc">
+											Aquest gràfic relaciona el consum energètic industrial (ktep) amb la variació del PIB industrial (%) en diferents anys clau.
+										</p>
+										<ul>
+											<li>
+												<span class="ods-graphic-highlight">2008</span>: Variació PIB industrial <strong>-5%</strong>
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">2020</span>: Consum energètic <strong>4.200 ktep</strong>
+											</li>
+										</ul>
+									</div>
+									<div class="ods-graphic-canvas">
+										<h3>Gràfic de relació consum-PIB</h3>
+										<canvas id="consumPibChart" width="700" height="400"></canvas>
+										<p class="ods-graphic-footnote">
+											<em>
+												<strong>Conclusió gràfic 3:</strong> S’observa una correlació entre el consum energètic industrial i la variació del PIB industrial, especialment en períodes de crisi com el 2008 i el 2020, on una caiguda del PIB s’associa a una reducció del consum energètic.
+											</em>
+										</p>
+									</div>
+								</div>
+							</section>
+
+							<!-- Conclusions generals sobre la relació entre indústria, energia i medi ambient -->
+							<section class="ods-graphic-section" style="max-width: 900px; margin: 48px auto 0 auto;">
+								<header>
+									<h2 class="ods-graphic-title">Conclusions generals</h2>
+								</header>
+								<div class="ods-graphic-flex">
+									<div class="ods-graphic-info" style="flex: 2 1 500px;">
+										<ul>
+											<li style="margin-bottom: 1.5em;">
+												<span class="ods-graphic-highlight">Hipòtesi 1:</span> El consum d’energia no renovable domina, però les renovables creixen.<br>
+												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
+												Confirmada parcialment: el consum no renovable segueix sent majoritari, però l’ús de renovables augmenta, especialment a Tarragona. Les emissions de GEH es mantenen elevades a les zones industrials.
+											</li>
+											<li>
+												<span class="ods-graphic-highlight">Hipòtesi 2:</span> El consum energètic industrial està vinculat al PIB industrial.<br>
+												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
+												Confirmada: la variació del PIB industrial es correlaciona amb el consum energètic, amb caigudes notables durant les crisis econòmiques.
+											</li>
+										</ul>
+									</div>
+									<div class="ods-graphic-canvas" style="display: flex; align-items: center; justify-content: center;">
+										<a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" title="Torna a dalt">
+											<img src="images/ODS/ODS9.jpg" alt="ODS 9" style="max-width: 180px; border-radius: 12px; box-shadow: 0 2px 8px rgba(30,64,175,0.08); cursor: pointer;">
+										</a>
+									</div>
+								</div>
+							</section>
+
+						</article>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contacta amb nosaltres</h3>
+										</header>
+										<p>Segueix-nos a les xarxes socials per a més informació i novetats sobre sostenibilitat digital.</p>
+										<ul class="icons">
+											<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://pinterest.com/" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="https://dribbble.com/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="https://linkedin.com/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Chart.js i gràfics -->
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			<script src="assets/graphics/ambiental/1.emissions_scatter.js"></script>
+			<script src="assets/graphics/ambiental/2.emissions_line.js"></script>
+            <script src="assets/graphics/ambiental/3.consum_pib.js"></script>
+
+	</body>
+</html>
