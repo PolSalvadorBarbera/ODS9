@@ -2,7 +2,7 @@
 <!--
 	Helios by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal i comercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -52,48 +52,47 @@
 					<div class="container">
 						<article id="main" class="special">
 
-							<!-- Aquí comença la secció dels gràfics relacionats amb les emissions de gasos d'efecte hivernacle i el consum energètic -->
-							<!-- Explicació i visualització dels gràfics relacionats: emissions de GEH i consum energètic -->
+							<!-- Aquí comença la secció dels gràfics econòmics relacionats amb la inversió, el VAB i l'atur -->
+							<!-- Explicació i visualització dels gràfics relacionats: inversió, VAB i atur -->
 							<section class="ods-graphic-section">
 								<header>
-									<h2 class="ods-graphic-title">1. Emissions de Gasos d'Efecte Hivernacle (GEH)</h2>
-									<h3 class="ods-graphic-title">Consum energètic i emissions per província</h3>
+									<h2 class="ods-graphic-title">1. Inversió i Valor Afegit Brut (VAB)</h2>
+									<h3 class="ods-graphic-title">Relació entre inversió total i VAB per comarques</h3>
 									<p class="ods-graphic-desc">
-										<strong>Hipòtesi:</strong> El consum d’energia no renovable domina, però les renovables creixen amb el temps i varien segons la província.<br>
-										<strong>Relació:</strong> Les comarques amb més activitat industrial tenen emissions de GEH més elevades, però l’ús creixent de renovables pot mitigar aquest impacte.
+										<strong>Hipòtesi:</strong> Com més s’inverteix en recerca i desenvolupament, més capacitat d’innovació i creixement tenen les comarques.<br>
+										<strong>Relació:</strong> La despesa en inversions es relaciona amb el VAB total i dels sectors innovadors.
 									</p>
 								</header>
 								<div class="ods-graphic-flex">
 									<div class="ods-graphic-info">
 										<ul>
 											<li>
-												<span class="ods-graphic-highlight">Barcelona</span><br>
-												Consum no renovable: <strong>4.500 ktep</strong> (2020)
+												<span class="ods-graphic-highlight">Barcelonès</span><br>
+												Inversió: <strong>502,94 M€</strong>, VAB: <strong>6.612,3 M€</strong>
 											</li>
 											<li>
-												<span class="ods-graphic-highlight">Tarragona</span><br>
-												Consum renovable: <strong>400 ktep</strong> (2020)
+												<span class="ods-graphic-highlight">Baix Llobregat</span><br>
+												Inversió: <strong>133,35 M€</strong>, VAB: <strong>6.867,1 M€</strong>
 											</li>
 											<li>
-												<span class="ods-graphic-highlight">Catalunya</span><br>
-												Emissions GEH: <strong>12.000 kt</strong> (2020)
+												<span class="ods-graphic-highlight">Vallès Occidental</span><br>
+												Inversió: <strong>125,86 M€</strong>, VAB: <strong>7.218,0 M€</strong>
 											</li>
 										</ul>
 										<div class="ods-graphic-method">
 											<h3>Metodologia</h3>
 											<ul>
-												<li>Informe_Emissions_GEH_Catalunya</li>
-												<li>Catalonia_Industrial_Energy_Consumption_Report</li>
-												<li>PIB. Per sectors. Variació en volum</li>
+												<li>Despesa en inversió per comarca</li>
+												<li>Valor afegit brut (VAB) per sectors</li>
 											</ul>
 										</div>
 									</div>
 									<div class="ods-graphic-canvas">
 										<h3>Gràfic de dispersió</h3>
-										<canvas id="emissionsScatterChart" width="600" height="400"></canvas>
+										<canvas id="graficComplet" width="600" height="400"></canvas>
 										<p class="ods-graphic-footnote">
 											<em>
-												<strong>Conclusió gràfic 1:</strong> El gràfic mostra que Barcelona lidera el consum d’energia no renovable i les emissions, però l’augment de renovables a Tarragona i altres províncies apunta a una tendència positiva cap a la sostenibilitat energètica.
+												<strong>Conclusió gràfic 1:</strong> El gràfic mostra una correlació positiva entre la inversió i el VAB, especialment a les comarques amb més pes industrial. Això indica que la inversió pot ser un motor de creixement econòmic.
 											</em>
 										</p>
 									</div>
@@ -101,17 +100,18 @@
 								<hr style="margin: 40px -1;">
 								<div class="ods-graphic-flex">
 									<div class="ods-graphic-info">
-										<h3 class="ods-graphic-title" style="font-size:1.3em;">2. Evolució del consum energètic industrial</h3>
+										<h3 class="ods-graphic-title" style="font-size:1.3em;">2. Inversió i Taxa d'Atur</h3>
 										<p class="ods-graphic-desc">
-											Aquest gràfic mostra l’evolució del consum energètic industrial (ktep) a les principals províncies catalanes entre 2002 i 2020.
+											<strong>Hipòtesi:</strong> Una major inversió afavoreix la creació d’ocupació i redueix la taxa d’atur.<br>
+											<strong>Relació:</strong> La inversió total per comarca es compara amb la taxa d’atur per veure si hi ha una relació inversa.
 										</p>
 									</div>
 									<div class="ods-graphic-canvas">
-										<h3>Gràfic d'evolució</h3>
-										<canvas id="emissionsLineChart" width="700" height="400"></canvas>
+										<h3>Gràfic de dispersió</h3>
+										<canvas id="graficAturInversio" width="600" height="400"></canvas>
 										<p class="ods-graphic-footnote">
 											<em>
-												<strong>Conclusió gràfic 2:</strong> El consum energètic industrial ha disminuït lleugerament a Barcelona i Tarragona, mentre que Girona i Lleida mantenen nivells més baixos. Aquesta tendència pot estar relacionada amb la millora de l’eficiència energètica i la transició cap a fonts renovables.
+												<strong>Conclusió gràfic 2:</strong> S’observa una tendència general on les comarques amb més inversió presenten una taxa d’atur lleugerament inferior, tot i que la relació no és estrictament lineal i hi ha excepcions.
 											</em>
 										</p>
 									</div>
@@ -119,32 +119,25 @@
 								<hr style="margin: 40px -1;">
 								<div class="ods-graphic-flex">
 									<div class="ods-graphic-info">
-										<h3 class="ods-graphic-title" style="font-size:1.3em;">3. Consum energètic industrial i PIB industrial</h3>
+										<h3 class="ods-graphic-title" style="font-size:1.3em;">3. Tendència de la inversió per comarques</h3>
 										<p class="ods-graphic-desc">
-											Aquest gràfic relaciona el consum energètic industrial (ktep) amb la variació del PIB industrial (%) en diferents anys clau.
+											<strong>Hipòtesi:</strong> La inversió en R+D i sectors innovadors ha augmentat en els darrers anys, afavorint el creixement econòmic.<br>
+											<strong>Relació:</strong> L’evolució de la inversió anual per comarca es compara per veure quines zones lideren la innovació i el creixement.
 										</p>
-										<ul>
-											<li>
-												<span class="ods-graphic-highlight">2008</span>: Variació PIB industrial <strong>-5%</strong>
-											</li>
-											<li>
-												<span class="ods-graphic-highlight">2020</span>: Consum energètic <strong>4.200 ktep</strong>
-											</li>
-										</ul>
 									</div>
 									<div class="ods-graphic-canvas">
-										<h3>Gràfic de relació consum-PIB</h3>
-										<canvas id="consumPibChart" width="700" height="400"></canvas>
+										<h3>Gràfic de línies</h3>
+										<canvas id="graficTendenciaInversio" width="700" height="400"></canvas>
 										<p class="ods-graphic-footnote">
 											<em>
-												<strong>Conclusió gràfic 3:</strong> S’observa una correlació entre el consum energètic industrial i la variació del PIB industrial, especialment en períodes de crisi com el 2008 i el 2020, on una caiguda del PIB s’associa a una reducció del consum energètic.
+												<strong>Conclusió gràfic 3:</strong> El gràfic mostra que el Barcelonès lidera la inversió al llarg dels anys, seguit de la resta de capitals. L’augment sostingut de la inversió es tradueix en més capacitat d’innovació i competitivitat.
 											</em>
 										</p>
 									</div>
 								</div>
 							</section>
 
-							<!-- Conclusions generals sobre la relació entre indústria, energia i medi ambient -->
+							<!-- Conclusions generals sobre la relació entre inversió, VAB i atur -->
 							<section class="ods-graphic-section" style="max-width: 900px; margin: 48px auto 0 auto;">
 								<header>
 									<h2 class="ods-graphic-title">Conclusions generals</h2>
@@ -153,14 +146,19 @@
 									<div class="ods-graphic-info" style="flex: 2 1 500px;">
 										<ul>
 											<li style="margin-bottom: 1.5em;">
-												<span class="ods-graphic-highlight">Hipòtesi 1:</span> El consum d’energia no renovable domina, però les renovables creixen.<br>
+												<span class="ods-graphic-highlight">Hipòtesi 1:</span> Com més inversió, més creixement econòmic.<br>
 												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
-												Confirmada parcialment: el consum no renovable segueix sent majoritari, però l’ús de renovables augmenta, especialment a Tarragona. Les emissions de GEH es mantenen elevades a les zones industrials.
+												Confirmada: la inversió es relaciona amb un VAB més alt i més desenvolupament econòmic, especialment a les comarques industrials.
+											</li>
+											<li style="margin-bottom: 1.5em;">
+												<span class="ods-graphic-highlight">Hipòtesi 2:</span> La inversió redueix l’atur.<br>
+												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
+												Confirmada parcialment: la relació és visible però no absoluta, ja que altres factors també influeixen en la taxa d’atur.
 											</li>
 											<li>
-												<span class="ods-graphic-highlight">Hipòtesi 2:</span> El consum energètic industrial està vinculat al PIB industrial.<br>
+												<span class="ods-graphic-highlight">Hipòtesi 3:</span> L’augment de la inversió impulsa la innovació.<br>
 												<span style="color:#1E40AF;"><strong>Conclusió:</strong></span>
-												Confirmada: la variació del PIB industrial es correlaciona amb el consum energètic, amb caigudes notables durant les crisis econòmiques.
+												Confirmada: les comarques amb més inversió mostren una tendència positiva en innovació i competitivitat.
 											</li>
 										</ul>
 									</div>
@@ -226,9 +224,11 @@
 
 			<!-- Chart.js i gràfics -->
 			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-			<script src="assets/graphics/ambiental/1.emissions_scatter.js"></script>
-			<script src="assets/graphics/ambiental/2.emissions_line.js"></script>
-            <script src="assets/graphics/ambiental/3.consum_pib.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script src="assets/graphics/economic/1.inversio_vab.js"></script>
+<script src="assets/graphics/economic/2.taxa_atur.js"></script>
+<script src="assets/graphics/economic/3.tendencia_inversio.js"></script>
+
 
 	</body>
 </html>
